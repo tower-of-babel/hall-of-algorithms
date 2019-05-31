@@ -1,4 +1,4 @@
-const rev = function(arr) {
+let reverse = function(arr) {
     if (arr.length === 0) {
 	return arr;
     } else {
@@ -7,7 +7,7 @@ const rev = function(arr) {
 }
 
 // seq: string or array
-const rev1 = function(seq) {
+let reverse = function(seq) {
     if (seq.length === 0) {
 	return seq;
     } else {
