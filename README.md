@@ -3,5 +3,5 @@ various well known/lesser known algorithms
 
 ## naming convention
 ### files
-- ?naming of natural recursion with no postfix or smt like natural-recursion
-- ?naming of tail call recursion with no postfix or smt like tailcall, tail-recursion
+- not postfix natural recursion versions of algortihms
+- postfix tail call recursion versions of algortihms with `tailcall`
