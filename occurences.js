@@ -1,4 +1,3 @@
-// no tail call
 function occur(elt, seq) {
     if(seq.length === 0) {
         return 0;
