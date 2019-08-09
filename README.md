@@ -13,3 +13,7 @@ TBD
 - atoms: `a`
 - list of atoms: `lat`
 - list of symbolic expressions: `l`
+
+### comments
+- one line, preferably at top, what function does: what arguments it takes and what it returns
+- one line at bottom shows function usage: how is it called and what it returns
