@@ -5,5 +5,5 @@ function includes(lst, elt) {
 	else return includes(lst.slice(1), elt);
     }
 }
-// TODO: add deep checking like
+// TODO: add deep checking like (these functions will be seperate functions like start * functions operating on general lists, l)
 // includes([2, 3, [1], 4], [1]) is false, can be true. may accept equality func as an argument
