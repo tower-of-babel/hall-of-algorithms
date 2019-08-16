@@ -1,14 +1,13 @@
 // !WRONG
-
 const sort = function(arr) {
-    if (arr.length === 0) {
-	return [];
-    } else {
-	if (arr[0] <= Math.min(...arr.slice(1))) {
-	    return [arr[0], ...sort(arr.slice(1))];
-	} else {
-	    return [...sort(arr.slice(1)), arr[0]];
-	}
+	if (arr.length === 0) {
+		return [];
+  } else {
+		if (arr[0] <= Math.min(...arr.slice(1))) {
+	  		return [arr[0], ...sort(arr.slice(1))];
+		} else {
+	    	return [...sort(arr.slice(1)), arr[0]];
+		}
     }
 }
 
