@@ -27,3 +27,35 @@ const sort1 = function(seq) {
 	}
 }
 */
+
+// Correct
+function sort1 (lat) {
+	if (lat.length === 0) return [];
+	else {
+		if (lat[0] === Math.max(...lat)) {
+			return [lat[0], ...sort1(lat.slice(1))]
+		} else {
+			return sort1([...lat.slice(1), lat[0]])
+        }
+	}
+}
+
+function sort2 (lat) {
+	if (lat.length === 0) return [];
+	else {
+		let max = Math.max(...lat)
+		return [max, ...sort2(remove(max, lat))]
+	}
+}
+
+function remove (elt, lat) {
+	if (lat.length === 0) {
+		return [];
+	} else {
+		if (lat[0] === elt) {
+			return lat.slice(1)
+		} else {
+			return [lat[0], ...remove(elt, lat.slice(1))]
+		}
+	}
+}
